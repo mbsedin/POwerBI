@@ -1,0 +1,16 @@
+## Merging
+
+Merging queries allows you to "join tables" based on a common column (Like VLOOKUP)
+
+Note: Mergin adds columns to an existing table.
+Just because you can merge tables, doesn't mean you should.
+In general, it's better to keep tables separate  and define relationships between them.
+
+## Appending
+
+Appending queries allows you to conbine (or stack) tables that share the exact "same column structure and data  types."
+Note 1: Appding adds rows to an existing table.
+
+Folder Option: (Get data >more> Folder) to append all files within a folder ( assuming they share the same structure); 
+as you add new files,simply refresh the query and they automatically  append
+

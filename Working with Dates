@@ -1,0 +1,22 @@
+## Principles:
+1.  Utuliser "Transformer" : uniquement pour : "Plus ancien" & "Plus récent"
+2.  Utiliser "Ajouter une colonne": Pour toutes les autres fonctions de date
+
+## Setting first day of week to monday:
+In Power BI the first daay of the week is set to "Sunday"
+In order to change that one of these function code  will fixe it.
+
+```
+0: dimanche
+1: lundi 
+= Table.AddColumn(#"Nom du jour inséré", "Début de semaine", each Date.StartOfWeek([Date],1), type date)
+
+= Table.AddColumn(#"Nom du jour inséré", "Début de semaine", each Date.StartOfWeek([Date],Day.Monday), type date)
+```
+
+## Crrer une colonne de date journalier a partir d'une date spécifiée:
+```
+Step 1: set a date:
+= #date(2018,1,1)
+Step 2: creates date colonne:
+= List.Dates(Source, Number.From(DateTime.LocalNow()) - Number.From(Source), #duration(1,0,0,0))

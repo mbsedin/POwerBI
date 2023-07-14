@@ -1,0 +1,5 @@
+## Paramètres  de la source de données
+The Data Source Settings in the query editor allow you to manage data connections and permissions.
+
+Note: Connections to local files referece the exact path
+if the filename or location changes, you will need to change the source and browse the current version.

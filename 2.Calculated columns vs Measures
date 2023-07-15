@@ -7,9 +7,9 @@
 ## MEASURES
 1.  Values are calculated  based on information from any filters in the report (has filter context)
 2.  Does not create new data in the tables themselves (doesn't increase file size)
-3.  Recalculate in reponse to any change to filterswithin the report
-4.  Almost always usedwithin the values field of a visual
+3.  Recalculate in reponse to any change to filters within the report
+4.  Almost always used within the values field of a visual
 
 ## ADDING COLUMNS & MEASURES
-### OPTION 1: Select "New Measure" or "New Column" from the modeling tab
+### OPTION 1: Select "New Measure" or "New Column" from the modeling tab (****NOT RECOMMENDED****)
 ### OPTION 2: Right-click within the table (in the Data view) or the Field List( in either the Data or report View)

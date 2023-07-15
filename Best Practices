@@ -1,0 +1,12 @@
+## Before Loading the data into Power BI
+1.  Define clear and intuitive table names (no spaces!) from the start; updating them later can be a headache,
+specially of you've referenced  them in multiple places.
+2.  Esatblsh a file/folder structure that makes sense from the start, 
+to avoid having top modify data source settings if file names or locations change.
+
+## Disabling report refresh for any static sources
+1.  There's no need to constantly refresh sources that don't update frequently (or not all),
+like lookups or static data tables; only enable refresh for tables thay will be changing.
+
+## When working with large tables, only load the data you need
+Don't include hourly data when you only need daily

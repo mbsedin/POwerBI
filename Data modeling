@@ -1,0 +1,32 @@
+## PRINCIPES:
+Créez toutes les relations de tables (en utilisant la méthode de votre choix), et confirmez les éléments suivants :
+
+-  La cardinalité est de 1 à plusieurs pour toutes les relations.
+-  Les filtres sont tous unidirectionnels (aucun filtre bidirectionnel).
+-  La direction du filtre s'écoule correctement "en aval" vers les tables de données.
+-  Les tables de données ne sont pas connectées directement les unes aux autres.
+-  Les deux tables de données sont connectées à toutes les tables de recherche valides.
+-  Les tables liées aux produits suivent un schéma en flocon de neige.
+
+
+## Hidding fields from the report view
+Hidding fields from report view makes them innaccessible from the report tab 
+(although can still be accessed with the data and the relationship views.)
+
+This is commonly used to prevent users from filtering using invalid fields,
+or to hide irrelevant metrics from view.
+
+NOTE: 
+Hide the foreign key columns in your  data tables to force users to filter
+using the primary keys in the lookup tables.
+
+## BEST PRACTICES
+1.  Focus on building a normalized model from the start
+-  make sure that each table in your model serve a single, distinct purpose
+-  Use relationships vs merged tables; long & narow table are better than short and wide
+2.  Organize Looup tables above data tables in the diagram view
+-  This serves a visual reminder that filfters flow "downstream"
+3.  Avoid complex cross-filtering unless absolutely  necessary
+-  Don't use two-way filters when 1-way filters will get the job done.
+4.  Fide fields from report view to prevent invalid filter context
+-  recommended hidding foreign key from databa tables, so that users can only access valid fields

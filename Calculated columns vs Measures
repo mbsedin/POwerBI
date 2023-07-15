@@ -1,0 +1,15 @@
+## CALCULATED COLUMNS
+1.  Values are calculated on information from each row of a table(has "row context")
+2.  Appends static values to each row in a table and stores them in the model (which increases file size)
+3.  Recalculate on data source refresh or when changes are made to component columns.
+4.  Primarily  used as rows, columns, slicers or filters
+
+## MEASURES
+1.  Values are calculated  based on information from any filters in the report (has filter context)
+2.  Does not create new data in the tables themselves (doesn't increase file size)
+3.  Recalculate in reponse to any change to filterswithin the report
+4.  Almost always usedwithin the values field of a visual
+
+## ADDING COLUMNS & MEASURES
+### OPTION 1: Select "New Measure" or "New Column" from the modeling tab
+### OPTION 2: Right-click within the table (in the Data view) or the Field List( in either the Data or report View)

@@ -1,0 +1,11 @@
+## "Filter context" (contexte de filtre)
+Le contexte de filtre détermine les données sur lesquelles les calculs sont effectués dans une formule DAX.
+Comprendre et gérer le contexte de filtre est crucial pour obtenir des résultats précis et cohérents dans vos formules DAX. 
+
+-  Lorsqu'une formule DAX est évaluée, elle prend en compte le contexte de filtre actuel 
+   pour déterminer les valeurs sur lesquelles le calcul doit être effectué. 
+-  Il est basé sur les filtres appliqués aux colonnes et aux visualisations,
+-  il peut être implicite ou explicite, unidirectionnel ou bidirectionnel
+
+Remember that measures are evaluated based on "filter context" , 
+which means that they recalculate whenever the fields or filters around  them change.

@@ -1,0 +1,15 @@
+## IMPLICIT MEASURES:
+Implicit measures are created  when you drag raw numerical fields (like "OrderQuantity") into the values pane of a visual 
+and manually select the aggregation mode (sum, Average, Min/Max, etc)
+
+## EXPLICIT MEASURES:
+Explicit measures are calculated by actually entering DAX functions (or adding "quick measures") to define calculated columns or measures.
+
+## NOTE !!!!!!!!!!!!!
+Implicit measures are only accessible within the specific visualization in which it was created, and cannot be referenced  elsewhere.
+Explicit measures can be used anywhere in the report, and referenced within other DAX calculations to create "measure trees"
+
+
+##### Reusing implicit measures:
+-  Approach 1:
+It's ok to use spaces in measures.They will be surrounded in brackets.

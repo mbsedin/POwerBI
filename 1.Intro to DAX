@@ -3,10 +3,12 @@ DAX   == Data Analysis Expressions.
 It's the formula language that drives Power BI.
 
 ## WHAT CAN BE DONE WITH DAX?
--  Add columns  and measures to your model
+-  Add calculated columns
+-  Add measures to your model
 
-## CLACULATED COLUMNS:
+## CALCULATED COLUMNS:
 Calculated columns allow you to add new, formula-based columns to tables.
+
   ### NOTES:
   -  No "A-style" references; calculated columns refer to entire tables or columns
   -  Calculated columns generate values for each row, which are visible with tables in the Data view
@@ -14,10 +16,10 @@ Calculated columns allow you to add new, formula-based columns to tables.
      but generally useless for aggregation (SUM, COUNT, etc)
 
       #### NB: 
-      Calculated columns are typically use for filtering data, rather than creating/defining new numerical values
-              As a rule of thumb, use calculated columns when you wnat to "stamp" static , fixzed values to each row
-              in a table (or use the query editor!)
+      Calculated columns are typically used for "FILTERING DATA", rather than "creating/defining new numerical values"
+              -  As a rule of thumb, use calculated columns when you wnat to "stamp" static , fixed values to each row
+                 in a table (or use the query editor!)
 
-              DO NOT use calculated columns for aggregation formulas, or to calculated fields for the "values" area
-              of a visualization (use measures instead)
+              -  DO NOT use calculated columns for aggregation formulas, or to calculated fields for the "values" area
+                 of a visualization (use measures instead)
   

@@ -1,0 +1,12 @@
+Measures are DAX formulas used to generate new calculated values.
+
+-  Like calculated columns, measures reference "entire tables" or "columns" (no A1-style or "grid" reference)
+-  Unlike calculated columns, "measures" values aren't visible within tables;
+   They can only be "seen" within a visualization like a chart or matrix (similar to a calculated field in an excel pivot)
+-  Measures are evaluated based on "filter context", which means they recalculate when the fields or filters around them change (like when new
+    row or column labels are pulled into a matrix or when filters are applied to a report)
+
+## NB:
+ A a rule of thumb: 
+use measures (vs. calculated columns) when a single row can't give you the answer  (in other worrds, when you need to aggragte
+use measures to create numerical , calculated values that can be analysed in the "values" field of a report visual
